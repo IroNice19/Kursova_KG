@@ -1,0 +1,143 @@
+.hero {
+    padding: 60px 0 40px;
+    text-align: center;
+    background: transparent;
+}
+
+#main-gif {
+    width: 55vw;           /* ← МЕНЯЙ ТОЛЬКО ЭТУ СТРОКУ */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Заголовок теперь вверху */
+.hero-title {
+    position: absolute;
+    
+    top: 3rem;                    /* отступ от верха */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    animation: fadeInDown 1.8s ease-out;
+}
+
+.hero-title h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4.5rem;
+    color: #0f172a;               /* ← твой оригинальный красивый цвет */
+    
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+
+/* Анимация появления сверху */
+@keyframes fadeInDown {
+    from { 
+        opacity: 0; 
+        transform: translate(-50%, -40px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translate(-50%, 0); 
+    }
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .hero-title { top: 2rem; }
+    .hero-title h1 { font-size: 2.9rem; }
+    .hero-subtitle { font-size: 1.15rem; }
+}
+
+/* Навигация — обычная, под гифкой */
+nav {
+    background: #1e293b;
+    text-align: center;
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #334155;
+    color: #93c5fd;
+    border-radius: 8px;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translate(-50%, 30px); }
+    to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* На мобилках чуть меньше */
+@media (max-width: 768px) {
+    .hero-title h1 { font-size: 2.8rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .hero { height: 65vh; }
+}
+
+/* ─────── СТИЛЬ ТЕКСТА НИЖЕ — 100 % КАК НА ТВОЁМ СКРИНШОТЕ ─────── */
+.container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 1.5rem 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e2eefa;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #1a202c;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.22rem;
+    line-height: 1.95;
+    color: #2d3748;
+}
+
+.section p {
+    margin-bottom: 1.7rem;
+}
+
+/* На мобильных */
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem 1rem;
+        padding: 2.BaseLine2.5rem 2rem;
+        border-radius: 16px;
+    }
+    h1, h2 { font-size: 2.2rem; }
+    h1::after, h2::after { width: 60px; height: 3px; }
+    .section { font-size: 1.1rem; }
+}
