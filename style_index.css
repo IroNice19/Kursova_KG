@@ -5,17 +5,17 @@
 }
 
 #main-gif {
-    width: 55vw;           /* ← МЕНЯЙ ТОЛЬКО ЭТУ СТРОКУ */
+    width: 55vw;           
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Заголовок теперь вверху */
+
 .hero-title {
     position: absolute;
     
-    top: 3rem;                    /* отступ от верха */
+    top: 3rem;                    
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -26,14 +26,14 @@
 .hero-title h1 {
     font-family: 'Libre Baskerville', serif;
     font-size: 4.5rem;
-    color: #0f172a;               /* ← твой оригинальный красивый цвет */
+    color: #0f172a;              
     
     margin: 0;
     letter-spacing: 1.5px;
 }
 
 
-/* Анимация появления сверху */
+
 @keyframes fadeInDown {
     from { 
         opacity: 0; 
@@ -52,7 +52,7 @@
     .hero-subtitle { font-size: 1.15rem; }
 }
 
-/* Навигация — обычная, под гифкой */
+
 nav {
     background: #1e293b;
     text-align: center;
@@ -94,7 +94,7 @@ nav ul li a:hover {
     .hero { height: 65vh; }
 }
 
-/* ─────── СТИЛЬ ТЕКСТА НИЖЕ — 100 % КАК НА ТВОЁМ СКРИНШОТЕ ─────── */
+
 .container {
     max-width: 1000px;
     margin: 4rem auto;
@@ -142,11 +142,9 @@ h1, h2 {
     .section { font-size: 1.1rem; }
 }
 
-/* ---------------------------------------------------- */
-/* НОВИЙ СТИЛЬ ДЛЯ ЛОГОТИПА У ВЕРХНЬОМУ ЛІВОМУ КУТІ */
-/* ---------------------------------------------------- */
+
 .top-left-logo-link {
-    /* Абсолютне позиціонування відносно <body> */
+    
     position: absolute; 
     top: 20px;
     left: 20px;
@@ -159,18 +157,15 @@ h1, h2 {
 }
 
 .site-logo {
-    width: 40px; /* ЗБІЛЬШЕННЯ: новий, більший розмір логотипу */
+    width: 40px; 
     height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     border-radius: 50%;
 }
 
-/* ---------------------------------------------------- */
-/* ОНОВЛЕННЯ СЕКЦІЇ HERO ДЛЯ ЗАПОБІГАННЯ НАКЛАДАННЮ */
-/* ---------------------------------------------------- */
+
 .hero {
-    /* ЗБІЛЬШЕННЯ ВІДСТУПУ: Збільшуємо відступ, щоб логотип (110px) 
-       не накладався на основний вміст. Було 80px, стало 100px. */
+    
     padding: 80px 0 40px; 
     text-align: center;
     background: transparent;
@@ -179,8 +174,7 @@ h1, h2 {
 /* Заголовок тепер вверху */
 .hero-title {
     position: absolute;
-    /* ЗБІЛЬШЕННЯ ВІДСТУПУ: Збільшуємо top, щоб заголовок не накладався на логотип. 
-       Було 4rem, стало 5rem. */
+    
     top: 5rem; 
     left: 50%;
     transform: translateX(-50%);
@@ -196,7 +190,7 @@ h1, h2 {
         left: 10px;
     }
     .site-logo {
-        width: 70px; /* Зменшити розмір на мобільних, було 60px */
+        width: 70px; 
     }
     .hero-title { top: 3rem; }
     .hero-title h1 { font-size: 2.9rem; }
